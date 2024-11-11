@@ -1,0 +1,18 @@
+@page
+@model lab6.Pages.CreateModel
+@{
+	ViewData["Title"] = "add a new task";
+}
+
+<div class="container">
+	<h1 class="my-4">add a new task</h1>
+
+	<form method="post">
+		<div class="mb-3">
+			<label asp-for="TaskTitle" class="form-label">write a task title</label>
+			<input asp-for="TaskTitle" class="form-control" />
+		</div>
+		<button type="submit" class="btn btn-success">add</button>
+		<a class="btn btn-danger" href="/Index">cancel</a>
+	</form>
+</div>
